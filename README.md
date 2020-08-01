@@ -7,9 +7,9 @@
 ## Install
 
 ```bash
-yarn global add @W6s/dex
+yarn global add @w6s/dex
 # or
-npm install -g @W6s/dex
+npm install -g @w6s/dex
 ```
 
 ## Usage
