@@ -1,0 +1,17 @@
+{
+  "name": "@w6s/dex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "bin/dex.js",
+  "repository": "https://github.com/WorkPlusFE/dex.git",
+  "author": "hejianxian <531601727@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^6.0.0",
+    "date-fns": "^2.15.0",
+    "shelljs": "^0.8.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
