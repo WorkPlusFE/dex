@@ -4,7 +4,7 @@
   "main": "index.js",
   "bin": "bin/dex.js",
   "repository": "https://github.com/WorkPlusFE/dex.git",
-  "author": "hejianxian <531601727@qq.com>",
+  "author": "hejianxian <hejianxian@foreverht.com>",
   "license": "MIT",
   "dependencies": {
     "commander": "^6.0.0",
