@@ -27,7 +27,7 @@ program.exitOverride((err) => {
 
 program
   .version(pkg.version, '-v, --version')
-  .arguments('<new-version> <old-version> [zip-name]')
+  .arguments('<new-version> [old-version] [zip-name]')
   .description('Diff different commits of git and export incremental packages')
   .action((newVersion, oldVersion, name) => {
     if (typeof name === 'undefined') {
@@ -37,7 +37,8 @@ program
       name += '.zip';
     }
     console.log('');
-    shell.exec(`git diff ${newVersion} ${oldVersion} --name-only | xargs zip ${name}`);
+    const commitIds = oldVersion ? `${newVersion} ${oldVersion}` : newVersion;
+    shell.exec(`git diff ${commitIds} --name-only | xargs zip ${name}`);
     console.log(`\n  🆒 Done! your zip file -> ${name}`);
   });
 

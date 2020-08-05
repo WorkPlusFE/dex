@@ -15,7 +15,7 @@ npm install -g @w6s/dex
 ## Usage
 
 ```bash
-Usage: dex [options] <new-version> <old-version> [zip-name]
+Usage: dex [options] <new-version> [old-version] [zip-name]
 
 Diff different commits of git and export incremental packages
 
